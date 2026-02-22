@@ -37,5 +37,8 @@ Poniższe wyniki zostały osiągnięte na procesorze Intel(R) Core(TM) i7-8665U 
 | 1 000 000 | 135 |
 | 5 000 000 | 776 |
 | 10 000 000 | 1535 |
+
+
 ![Wykres czasu działania algorytmu Quick Sort dla różnej ilości danych](static/time_of_sort.svg)
+
 **Wnioski z eksperymentu:** Zgodnie z powyższym wykresem oraz tabelą danych, czas działania algorytmu Quick Sort rośnie proporcjonalnie do rozmiaru danych wejściowych w sposób nieliniowy, ale bardzo zbliżony do linii prostej. Obserwowany kształt krzywej potwierdza teoretyczną średnią złożoność czasową $O(n \log n)$. Język Rust (dzięki bezpośredniej kompilacji do kodu maszynowego i agresywnym optymalizacjom kompilatora dla profilu *release*) sprawia, że dla miliona elementów czas sortowania jest liczony w ułamkach sekund, co udowadnia wysoką skuteczność tego algorytmu w praktyce.
